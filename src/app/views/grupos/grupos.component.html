@@ -1,0 +1,70 @@
+<div class="row">
+    <div class="col-4">
+
+        <div class="row">
+            <div class="col-lg-12">
+                <input class="form-control" placeholder="Buscar grupo..." type="text" (keyup)="filterGroup($event)" />
+            </div>
+        </div>
+
+        <div class="card" *ngFor="let g of groupListFilter">
+            <div class="card-header">
+                <nav class="navbar navbar-light bg-light">
+                    <div class="container-fluid">
+                        <h5>{{ g.id }} - {{ g.name }}</h5>
+                        <form *ngIf="g!=currentGroup" class="d-flex">
+                            <button class="btn btn-info" type="button" (click)="getEmpPorGrupo(g)"> + </button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-2">
+
+    </div>
+    <div class="col-6">
+
+        <div *ngIf="(currentGroup && !conEmpleados)">
+            <div class="alert alert-warning" role="alert">
+                Grupo sin empleados
+              </div>
+        </div>
+        <div class="container" *ngIf="currentGroup && conEmpleados">
+            <div class="text-center mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <input type="checkbox" [(ngModel)]="masterSelected" name="list_name" value="m1"
+                                    (change)="checkUncheckAll()" /> <strong>Seleccionar/Desmarcar todo</strong>
+                            </li>
+                        </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item" *ngFor="let item of empleadosList">
+                                <input type="checkbox" [(ngModel)]="item.isSelected" name="list_name"
+                                    value="{{item.id}}" (change)="isAllSelected()" />
+                                {{item.name}}
+                            </li>
+                        </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <button class="btn btn-primary" (click)="verSelect()" type="button">Continuar</button>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br><br>
+<div class="row" *ngIf="verEmpleados">
+    <div class="col-12">
+        <code>{{checkedList}}</code>
+    </div>
+</div>

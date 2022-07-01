@@ -1,0 +1,60 @@
+<div *ngIf="done">
+
+    <div class="card">
+        <div class="card-header">
+            <nav class="navbar navbar-light bg-light">
+                <div class="container-fluid">
+                    <h3>Agregar Empleado</h3>
+                    <form class="d-flex">
+                        <button class="btn btn-warning" type="button" (click)="goToEmployees()">Regresar</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+        <div class="card-body">
+            <form class="needs-validation" [formGroup]="empleadoForm">
+
+                <div class="form-row">
+                    <div class="col-6">
+                        <label class="col-form-label col-form-label-lg" for="name">Nombre (S) **</label>
+                        <input id="name" formControlName="name" placeholder="Nombre (s)" type="text"
+                            class="form-control form-control-lg" maxlength="30"/>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-6">
+                        <label class="col-form-label col-form-label-lg" for="last_name">Apellidos **</label>
+                        <input id="last_name" formControlName="last_name" placeholder="Apellidos" type="text"
+                            class="form-control form-control-lg" maxlength="30"/>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-4">
+                        <label class="col-form-label col-form-label-lg" for="birthday"> Fecha de nacimiento **</label>
+                        <div class="input-group">
+                            <input type="date" name="birthday" class="form-control form-control-lg"
+                                formControlName="birthday" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-12">
+                        <h3>** Campos requeridos</h3>
+                    </div>
+                </div>
+
+                <pre> {{ empleadoForm.value | json }}</pre>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success btn-lg" [disabled]="empleadoForm.invalid"
+                    (click)="addEmpleado(empleadoForm.value)">
+                    <i class="fas fa-save"></i> Guardar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

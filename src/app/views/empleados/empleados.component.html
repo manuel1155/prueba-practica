@@ -1,0 +1,26 @@
+<div *ngIf="done">
+    <h1>Lista de empleados</h1>
+    <br>
+    <div class="row">
+        <div class="col-lg-6 col-md-8">
+            <input class="form-control" id="filter-text-box" placeholder="Filter..." (input)="onFilterTextBoxChanged()"
+                type="text" />
+        </div>
+    </div>
+    <br>
+    <ag-grid-angular style="width: 800px; height: 380px;" class="ag-theme-balham" [rowData]="empleadosList"
+        [columnDefs]="columnDefs" [defaultColDef]="defaultColDef" [pagination]="true" [paginationPageSize]="10"
+        [cacheQuickFilter]="true" (gridReady)="onGridReady($event)">
+    </ag-grid-angular>
+
+
+    <br><br>
+    <div class="row">
+        <div class="col-sm-9">
+
+        </div>
+        <div class="col-sm-3">
+            <button type="button" class="btn btn-success btn-lg" (click)="goToAddEmployee()">Agregar empleado</button>
+        </div>
+    </div>
+</div>
