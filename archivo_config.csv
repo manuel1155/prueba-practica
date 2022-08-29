@@ -28,10 +28,10 @@ Valor Futuro,Garantía,segmento
 Calidad de la Garantía,Garantía,segmento
 Tipo de Garantía,Calidad de la Garantía,variable
 Mercado (Pilar),Score final,pilar
-Tamaño de Mercado,Mercado,segmento
-Tendencia del Sector,Mercado,segmento
-Empresa vs Mercado,Mercado,segmento
-Factores Externos,Mercado,segmento
+Tamaño de Mercado,Mercado (Pilar),segmento
+Tendencia del Sector,Mercado (Pilar),segmento
+Empresa vs Mercado,Mercado (Pilar),segmento
+Factores Externos,Mercado (Pilar),segmento
 Proyecto Productivo,Score final,pilar
 Impacto del Financiamiento,Proyecto Productivo,segmento
 Horizonte de Inversión,Proyecto Productivo,segmento
