@@ -37,18 +37,3 @@ Apalancamiento,Capacidad Financiera,segmento
 Mercado,Capacidad Financiera,segmento
 Sector,Mercado,variable
 Estado,Mercado,variable
-Procedimientos Penales,Score Final,abortivo
-Quebrantos o Quitas,Score Final,abortivo
-Zonas de Riesgo,Score Final,abortivo
-PEPS,Score Final,abortivo
-Listas SAT 69B,Score Final,abortivo
-Listas OFAC,Score Final,abortivo
-Giros Prohibidos,Score Final,abortivo
-Score,Score Final,abortivo
-Score Final,Score Final,resultado
-Monto,Score Final,resultado
-Plazo,Score Final,resultado
-Tasa,Score Final,resultado
-Aforo Resultado,Score Final,resultado
-Clasificación de Riesgo,Score Final,resultado
-DSCR,Score Final,resultado
