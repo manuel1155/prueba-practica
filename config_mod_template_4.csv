@@ -1,0 +1,39 @@
+name,parent,component
+Score Final,,resultado
+Solvencia Moral,Score Final,pilar
+Referencias,Solvencia Moral,segmento
+Canal de Comercialización,Referencias,variable
+Visibilidad,Solvencia Moral,segmento
+Prescencia en Línea,Visibilidad,variable
+Domicilios Registrados,Visibilidad,variable
+Experiencia,Solvencia Moral,segmento
+Antigüedad del Negocio,Experiencia,variable
+Antecedentes Legales,Solvencia Moral,segmento
+Opinión de cumplimiento,Antecedentes Legales,variable
+Comportamiento de Pago,Solvencia Moral,segmento
+Tasa de Éxito,Comportamiento de Pago,variable
+Utilización de Crédito,Comportamiento de Pago,variable
+Antigüedad de Buro,Comportamiento de Pago,variable
+Saldo Vigente Crédito / Saldo Vigente Total > 20%,Comportamiento de Pago,variable
+% Saldo Vencido,Comportamiento de Pago,variable
+Peor MOP últimos 12 meses,Comportamiento de Pago,variable
+Garantía,Score Final,pilar
+Ejecución,Garantía,segmento
+Ubicación Garantía,Ejecución,variable
+Colocación,Garantía,segmento
+Descripción de la Garantía,Colocación,variable
+Calidad de la Garantía,Garantía,segmento
+Tipo de Garantía,Calidad de la Garantía,variable
+Capacidad Financiera,Score Final,pilar
+Capacidad de Pago,Capacidad Financiera,segmento
+EBITDA / Servicio de la Deuda,Capacidad de Pago,variable
+Utilidad Fiscal / Servicio de la Deuda,Capacidad de Pago,variable
+Modelo de Negocio,Capacidad Financiera,segmento
+Ingresos,Modelo de Negocio,variable
+Crecimiento,Capacidad Financiera,segmento
+Crecimiento año actual vs año anterior,Crecimiento,variable
+Deuda Buró / Ingresos,Apalancamiento,variable
+Apalancamiento,Capacidad Financiera,segmento
+Mercado,Capacidad Financiera,segmento
+Sector,Mercado,variable
+Estado,Mercado,variable
